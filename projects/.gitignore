@@ -1,0 +1,24 @@
+# This file tells git what files to ignore when looking at our files.
+# Lines that start with '#' are comments. All other lines describe a
+# given file name using glob patterns (i.e. with wildcard characters).
+# Any file matching the pattern is ignored by git. I use this to make
+# sure that I am always excluding non-source files, such as an output
+# from a test script.
+#
+# See https://help.github.com/articles/ignoring-files/ for more info.
+#
+######################################################################
+
+# Mac OS X makes these files to hold Finder window settings.
+# See https://en.wikipedia.org/wiki/.DS_Store for more info.
+.DS_Store
+
+# The popular text editor `vi` and its derivatives (like `vim`) make
+# files with this extension when auto-saving files being edited.
+*.swp
+
+# The test scripts for the various chip-parts make output files with
+# the `.out` extension when running the tests. These are identical to
+# the compare files (`.cmp`), which are already included, so we will
+# be able to safely ignore these testing artifacts.
+*.out
