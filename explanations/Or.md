@@ -1,6 +1,6 @@
 # `OR` logic gate
 
-The Hardware Description Language (HDL) description of the `NOT` functionality begins like this:
+The Hardware Description Language (HDL) description of the `OR` functionality begins like this:
 
 ```
 CHIP Or {
